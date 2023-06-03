@@ -5,7 +5,7 @@ function juego() {
         numeroAdivinar = parseInt(prompt("Jugador uno ingresa un numero sin que el Jugador dos lo vea" + "\n" + "el numero debe ser entero del 1 al 10"))
     } while (isNaN(numeroAdivinar) || numeroAdivinar < 1 || numeroAdivinar > 10);
 
-    alert("¡Jugador dos, comienza a adivinar!")
+    alert("¡Jugador dos, comienza a adivinar el numero del 1 al 10!")
 
     let intentos = 3
 
@@ -13,6 +13,7 @@ function juego() {
         let numeroAdivinado = parseInt(prompt("Adivina el numero!"))
         if (numeroAdivinado === numeroAdivinar) {
             alert("Felicidades Jugador dos, has ganado el juego")
+            juegoBienvenida()
             return
         } else {
             intentos--
@@ -36,7 +37,7 @@ function juegoBienvenida() {
         let mensaje = "bienvenidos al juego de ADIVINA EL NUMERO" + "\n" + "Presiona: 1 para jugar, 0 para salir"
         bienvenida = prompt(mensaje)
 
-    } while (bienvenida != 1 && bienvenida != 0)
+    } while (bienvenida != "1" && bienvenida != "0")
 
     if (bienvenida === "1") {
         juego()
