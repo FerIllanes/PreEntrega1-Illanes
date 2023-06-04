@@ -34,7 +34,7 @@ juegoBienvenida()
 function juegoBienvenida() {
     let bienvenida
     do {
-        let mensaje = "bienvenidos al juego de ADIVINA EL NUMERO" + "\n" + "Presiona: 1 para jugar, 0 para salir"
+        let mensaje = "Bienvenidos al juego de ADIVINA EL NUMERO" + "\n" + "Presiona: 1 para jugar, 0 para salir"
         bienvenida = prompt(mensaje)
 
     } while (bienvenida != "1" && bienvenida != "0")
